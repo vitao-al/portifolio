@@ -154,6 +154,141 @@
   height: 15px;
 }
 
+.beyond-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.beyond-heading {
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  line-height: 0.94;
+  margin: 0 0 16px;
+  text-align: center;
+}
+
+.beyond-text {
+  margin: 0 auto 16px;
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.beyond-hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.hobby-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 11px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  color: #dbe2f0;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+
+.hobby-chip svg {
+  width: 15px;
+  height: 15px;
+  color: #c8d0e0;
+  flex: 0 0 auto;
+}
+
+.beyond-carousel {
+  --slide-w: 200px;
+  --slide-gap: 10px;
+  --carousel-pad: 10px;
+  position: relative;
+  overflow: hidden;
+  width: calc(var(--slide-w) + (var(--carousel-pad) * 2));
+  max-width: 100%;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+  padding: var(--carousel-pad);
+  margin-inline: auto;
+}
+
+.beyond-carousel::before,
+.beyond-carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 72px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.beyond-carousel::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(5, 6, 8, 1), rgba(5, 6, 8, 0));
+}
+
+.beyond-carousel::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(5, 6, 8, 1), rgba(5, 6, 8, 0));
+}
+
+.beyond-track {
+  display: flex;
+  align-items: center;
+  gap: var(--slide-gap);
+  width: max-content;
+  animation: beyond-carousel-slide 36s ease-in-out infinite;
+}
+
+.beyond-slide {
+  margin: 0;
+  width: var(--slide-w);
+  aspect-ratio: 16 / 10;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #0f131d;
+  flex: 0 0 auto;
+}
+
+.beyond-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@keyframes beyond-carousel-slide {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+
+  28%,
+  48% {
+    transform: translateX(calc(-1 * (var(--slide-w) + var(--slide-gap))));
+  }
+
+  56%,
+  76% {
+    transform: translateX(calc(-2 * (var(--slide-w) + var(--slide-gap))));
+  }
+
+  84%,
+  100% {
+    transform: translateX(calc(-3 * (var(--slide-w) + var(--slide-gap))));
+  }
+}
+
 .exp-section,
 .edu-section,
 .cert-section {
@@ -346,9 +481,51 @@
   }
 
   .exp-section,
+  .beyond-section,
   .edu-section,
   .cert-section {
     margin-bottom: 48px;
+  }
+
+  .beyond-text {
+    font-size: 0.92rem;
+    margin-bottom: 18px;
+  }
+
+  .beyond-heading {
+    font-size: clamp(1.9rem, 9vw, 3.2rem);
+    margin-bottom: 12px;
+  }
+
+  .beyond-hobbies {
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .hobby-chip {
+    font-size: 0.76rem;
+    padding: 5px 9px;
+  }
+
+  .hobby-chip svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .beyond-carousel {
+    --slide-w: 160px;
+    --slide-gap: 8px;
+    --carousel-pad: 8px;
+    border-radius: 14px;
+  }
+
+  .beyond-carousel::before,
+  .beyond-carousel::after {
+    width: 34px;
+  }
+
+  .beyond-slide {
+    border-radius: 10px;
   }
 
   .exp-card,
