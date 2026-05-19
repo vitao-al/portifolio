@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victor Manuel | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page-title-pt="Victor Manuel | Portfólio" data-page-title-en="Victor Manuel | Portfolio">
+  <header class="site-header">
+    <nav class="top-nav">
+      <a class="brand" href="#home">Victor Manuel</a>
+      <div class="nav-actions">
+        <ul class="nav-links">
+          <li><a href="#skills" data-i18n="nav.skills">Habilidades</a></li>
+          <li><a href="#works" data-i18n="nav.works">Projetos</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
+        </ul>
+        <button class="lang-toggle" type="button" aria-label="Translate site to English">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="hero-content">
+        <div class="status-row">
+          <span class="pill">Maceió, AL</span>
+          <span class="pill pill-accent" data-i18n="hero.status">Disponível para trabalho</span>
+        </div>
+        <h1 id="hero-title" data-title-lines='["CRIANDO","VALOR DIGITAL."]' data-title-lines-pt='["CRIANDO","VALOR DIGITAL."]' data-title-lines-en='["BUILDING","DIGITAL VALUE."]' data-title-aria-pt="CRIANDO VALOR DIGITAL." data-title-aria-en="BUILDING DIGITAL VALUE." aria-label="CRIANDO VALOR DIGITAL."></h1>
+        <p class="hero-text" data-i18n="hero.text">
+          Desenvolvedor Full Stack focado em criar soluções web com JavaScript, TypeScript,
+          React, Next.js e APIs REST para resolver desafios reais de negócio.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#works" data-i18n="hero.ctaProjects">Ver projetos</a>
+          <a class="btn btn-ghost" href="profile.html" data-i18n="hero.ctaProfile">Meu perfil</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="avatar-placeholder"></div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2 data-i18n="skills.heading">Minhas Habilidades</h2>
+      <div class="grid grid-4">
+        <article class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          <h3>Full Stack</h3>
+          <p>HTML5, CSS3, React, Next.js, Tailwind CSS</p>
+        </article>
+        <article class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+          </svg>
+          <h3 data-i18n="skills.toolsTitle">Ferramentas e plataformas</h3>
+          <p data-i18n="skills.toolsText">Git, GitHub, Figma, Docker, Vercel, Resend, Render API</p>
+        </article>
+        <article class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          <h3 data-i18n="skills.softTitle">Soft Skills</h3>
+          <p data-i18n="skills.softText">Trabalho em equipe, comunicacao assertiva e proatividade</p>
+        </article>
+      </div>
+
+      <div class="tech-section">
+        <p class="tech-label" data-i18n="tech.label">Tecnologias que utilizo</p>
+        <div class="tech-grid">
+          <a class="tech-item" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener" aria-label="Abrir site do JavaScript">
+            <i class="devicon-javascript-plain colored" aria-hidden="true"></i>
+            <span>JavaScript</span>
+          </a>
+          <a class="tech-item" href="https://www.typescriptlang.org/" target="_blank" rel="noopener" aria-label="Abrir site do TypeScript">
+            <i class="devicon-typescript-plain colored" aria-hidden="true"></i>
+            <span>TypeScript</span>
+          </a>
+          <a class="tech-item" href="https://www.python.org/" target="_blank" rel="noopener" aria-label="Abrir site do Python">
+            <i class="devicon-python-plain colored" aria-hidden="true"></i>
+            <span>Python</span>
+          </a>
+          <a class="tech-item" href="https://www.mysql.com/" target="_blank" rel="noopener" aria-label="Abrir site do MySQL">
+            <i class="devicon-mysql-plain colored" aria-hidden="true"></i>
+            <span>SQL</span>
+          </a>
+          <a class="tech-item" href="https://dev.java/" target="_blank" rel="noopener" aria-label="Abrir site do Java">
+            <i class="devicon-java-plain colored" aria-hidden="true"></i>
+            <span>Java</span>
+          </a>
+          <a class="tech-item" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener" aria-label="Abrir documentação HTML5">
+            <i class="devicon-html5-plain colored" aria-hidden="true"></i>
+            <span>HTML5</span>
+          </a>
+          <a class="tech-item" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener" aria-label="Abrir documentação CSS3">
+            <i class="devicon-css3-plain colored" aria-hidden="true"></i>
+            <span>CSS3</span>
+          </a>
+          <a class="tech-item" href="https://react.dev/" target="_blank" rel="noopener" aria-label="Abrir site do React">
+            <i class="devicon-react-original colored" aria-hidden="true"></i>
+            <span>React</span>
+          </a>
+          <a class="tech-item" href="https://nodejs.org/" target="_blank" rel="noopener" aria-label="Abrir site do Node.js">
+            <i class="devicon-nodejs-plain colored" aria-hidden="true"></i>
+            <span>Node.js</span>
+          </a>
+          <a class="tech-item" href="https://www.postgresql.org/" target="_blank" rel="noopener" aria-label="Abrir site do PostgreSQL">
+            <i class="devicon-postgresql-plain colored" aria-hidden="true"></i>
+            <span>PostgreSQL</span>
+          </a>
+          <a class="tech-item" href="https://git-scm.com/" target="_blank" rel="noopener" aria-label="Abrir site do Git">
+            <i class="devicon-git-plain colored" aria-hidden="true"></i>
+            <span>Git</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="works">
+      <div class="section-head">
+        <h2 data-i18n="works.heading">Projetos</h2>
+        <p data-i18n="works.text">Projetos reais com foco em full stack, desempenho e experiência do usuário.</p>
+      </div>
+      <div class="work-list">
+        <article class="work-card">
+          <div class="work-image">
+            <img class="work-image-photo" src="assets/sistemaSEL.png" alt="Projeto SistemaSEL" loading="lazy">
+            <div class="work-tech">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">MongoDB</span>
+            </div>
+          </div>
+          <div class="work-content">
+            <span class="work-number">01</span>
+            <h3>SistemaSEL</h3>
+            <p data-i18n="project.sistema.desc">
+              Plataforma full stack para gestão eleitoral e CRM com autenticação JWT em
+              cookie HttpOnly, controle de acesso por perfil (RBAC), painel com métricas
+              em tempo real e arquitetura orientada a segurança e conformidade LGPD.
+            </p>
+            <div class="project-links">
+              <a class="project-btn project-btn-primary" href="https://sistema-sel.vercel.app/login" target="_blank" rel="noopener" data-i18n-aria-label="project.viewSite">
+                <span data-i18n="project.viewSite">Ver site</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a class="project-btn" href="https://github.com/vitao-al/sistemaSEL.git" target="_blank" rel="noopener" data-i18n-aria-label="project.repo">
+                <span data-i18n="project.repo">Repositório GitHub</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <small>
+              Next.js 14 • React • TypeScript • PostgreSQL • Prisma • Vitest
+            </small>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-image">
+            <img class="work-image-photo" src="assets/genesis.png" alt="Projeto Genesis" loading="lazy">
+            <div class="work-tech">
+              <span class="tech-badge">Vue.js</span>
+              <span class="tech-badge">Firebase</span>
+            </div>
+          </div>
+          <div class="work-content">
+            <span class="work-number">02</span>
+            <h3>Genesis</h3>
+            <p data-i18n="project.genesis.desc">
+              Projeto interdisciplinar para análise de habitabilidade exoplanetária, com
+              interface desenhada no Figma, experiência visual orientada por dados,
+              integração entre frontend e backend Python e chat com IA para apoio analítico.
+            </p>
+            <div class="project-links">
+              <a class="project-btn project-btn-primary" href="https://genesis-t3cy.onrender.com/" target="_blank" rel="noopener" data-i18n-aria-label="project.viewSite">
+                <span data-i18n="project.viewSite">Ver site</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a class="project-btn" href="https://github.com/vitao-al/Genesis.git" target="_blank" rel="noopener" data-i18n-aria-label="project.repo">
+                <span data-i18n="project.repo">Repositório GitHub</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <small>
+              Python • Flask • UI/UX Design • Figma • Integração com IA
+            </small>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-image">
+            <img class="work-image-photo" src="assets/thiagopontes.png" alt="Projeto Thiago Pontes Psicólogo" loading="lazy">
+            <div class="work-tech">
+              <span class="tech-badge">TypeScript</span>
+              <span class="tech-badge">PostgreSQL</span>
+            </div>
+          </div>
+          <div class="work-content">
+            <span class="work-number">03</span>
+            <h3>Thiago Pontes Psicólogo</h3>
+            <p data-i18n="project.thiago.desc">
+              Landing page profissional com estrutura orientada a conversão, práticas de
+              SEO técnico, geolocalização para facilitar contato local, componentes dinâmicos
+              e alternância de tema para melhorar usabilidade em diferentes contextos.
+            </p>
+            <div class="project-links">
+              <a class="project-btn project-btn-primary" href="https://www.psithiagopontes.com.br/" target="_blank" rel="noopener" data-i18n-aria-label="project.viewSite">
+                <span data-i18n="project.viewSite">Ver site</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a class="project-btn" href="https://github.com/vitao-al/thiagopontespsicologo.git" target="_blank" rel="noopener" data-i18n-aria-label="project.repo">
+                <span data-i18n="project.repo">Repositório GitHub</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <small>
+              HTML5 • CSS3 • JavaScript • Vite • Tailwind CSS
+            </small>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <h2 data-i18n="process.heading">Processos de criação de um software</h2>
+      <div class="grid grid-4">
+        <article class="card step"><strong>01</strong><h3 data-i18n="process.plan.title">Planejamento</h3><p data-i18n="process.plan.text">Toda grande solução começa com uma ideia. Aqui transformamos problemas reais em requisitos claros, definindo o que será construído, para quem e por quê.</p></article>
+        <article class="card step"><strong>02</strong><h3 data-i18n="process.design.title">Design</h3><p data-i18n="process.design.text">É o momento de desenhar antes de construir. Estruturamos o sistema, modelamos o banco de dados e projetamos as interfaces — as decisões tomadas aqui sustentam tudo que vem depois.</p></article>
+        <article class="card step"><strong>03</strong><h3 data-i18n="process.build.title">Construção</h3><p data-i18n="process.build.text">O código ganha vida. Cada linha escrita transforma a visão em realidade, unindo lógica, criatividade e técnica.</p></article>
+        <article class="card step"><strong>04</strong><h3 data-i18n="process.launch.title">Entrega</h3><p data-i18n="process.launch.text">Nenhum software está pronto até ser testado. Refinamos, corrigimos e entregamos — não apenas um produto, mas uma experiência funcional nas mãos de quem vai usá-la.</p></article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-left">
+        <h2 data-i18n="contact.heading">Vamos nos conectar.</h2>
+        <p data-i18n="contact.text">Não há super poder maior do que a união.</p>
+        <div class="social-links">
+          <a href="mailto:vm74531@gmail.com" class="social-icon" title="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22 6 12 13 2 6"></polyline>
+            </svg>
+          </a>
+          <a href="https://github.com/vitao-al" class="social-icon" title="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 . 405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.002 12.002 0 0024 12c0-6.63-5.37-12-12-12z"></path>
+            </svg>
+          </a>
+          <a href="www.linkedin.com/in/victor-manuel-343386251" class="social-icon" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form class="contact-form">
+          <label><span data-i18n="form.fullName">NOME COMPLETO</span><input type="text" data-i18n-placeholder="form.fullNamePlaceholder" placeholder="Digite seu nome completo"></label>
+          <label><span data-i18n="form.email">ENDEREÇO DE E-MAIL</span><input type="email" data-i18n-placeholder="form.emailPlaceholder" placeholder="Digite seu endereço de e-mail"></label>
+          <label><span data-i18n="form.phone">NÚMERO DE TELEFONE</span> <span class="optional" data-i18n="form.optional">(opcional)</span><input type="tel" data-i18n-placeholder="form.phonePlaceholder" placeholder="Digite seu número de telefone (opcional)"></label>
+          <label><span data-i18n="form.help">COMO POSSO AJUDAR?</span><textarea rows="4" data-i18n-placeholder="form.helpPlaceholder" placeholder="Escreva sua mensagem aqui..."></textarea></label>
+          <button type="button" class="btn btn-primary" data-i18n="form.send">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <h2 class="footer-signature">Victor Manuel</h2>
+    <p data-i18n="footer.text">Criando soluções digitais com foco em performance, organização e resultado.</p>
+    <small data-i18n="footer.copy">© 2026 Victor Manuel. Todos os direitos reservados.</small>
+  </footer>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
