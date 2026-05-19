@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victor Manuel | Sobre mim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page-title-pt="Victor Manuel | Sobre mim" data-page-title-en="Victor Manuel | About me">
+
+  <!-- Custom cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <main class="profile-page">
+
+    <!-- Back button -->
+    <a class="back-btn reveal" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 12H5M5 12l7 7M5 12l7-7"/>
+      </svg>
+      <span data-i18n="profile.back">Voltar para a home</span>
+    </a>
+
+    <!-- Hero -->
+    <div class="profile-hero">
+      <div class="profile-hero-left reveal">
+        <p class="eyebrow" data-i18n="profile.eyebrow">Sobre / Perfil</p>
+        <h1 data-i18n="profile.heading">Sobre mim</h1>
+        <p data-i18n="profile.text">
+          Sou um desenvolvedor fullstack com experiência em tecnologias modernas para web. Atuo focado na construção de aplicações escaláveis e bem arquitetadas. Minha trajetória combina formação técnica, experiência prática em projetos e resolução de problemas reais em sistemas de produção.
+        </p>
+      </div>
+
+      <div class="profile-terminal reveal">
+        <div class="terminal-window" aria-label="Terminal fictício estilo Fedora">
+          <div class="terminal-topbar">
+            <div class="traffic-lights" aria-hidden="true">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <p class="terminal-title">victor@fedora — bash</p>
+          </div>
+          <div class="terminal-body">
+            <p class="prompt-line">victor@fedora ~ % python programmer.py</p>
+            <pre><code class="language-python">class Programmer(Human):
+    """Class representing a programmer"""
+
+    def __init__(self, name: str, age: int):
+        super().__init__(name, age)
+
+    def coding(self) -> str:
+        return "breaking the head"
+
+    def start(self):
+      while super().alive():
+        super().eat()
+        self.code()
+        super().sleep()
+
+if __name__ == "__main__":
+    developer = Programmer("Victor", 21)
+    developer.start()</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Professional Experience -->
+    <section class="exp-section">
+      <div class="section-label reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/>
+        </svg>
+        <span data-i18n="profile.expLabel">Experiência profissional</span>
+      </div>
+
+      <div class="exp-grid">
+        <article class="exp-card reveal">
+          <span class="card-date">Set 2025 — Atual</span>
+          <h3 data-i18n="profile.exp1.title">SEMGE — Estagiário de TI</h3>
+          <p data-i18n="profile.exp1.text">Atuação no setor de TI da Junta Médica Oficial de Maceió com suporte técnico, manutenção de rede e automação de protocolos.</p>
+        </article>
+
+        <article class="exp-card reveal">
+          <span class="card-date">Ago 2024 — Out 2024</span>
+          <h3 data-i18n="profile.exp2.title">CTI (IFAL) — Estagiário de Redes e Suporte</h3>
+          <p data-i18n="profile.exp2.text">Configuração de roteadores/switches, manutenção de hardware e redes, suporte ao usuário e infraestrutura de câmeras.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="edu-section">
+      <div class="section-label reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+        </svg>
+        <span data-i18n="profile.eduLabel">Educação</span>
+      </div>
+
+      <div class="edu-grid">
+        <article class="edu-item reveal">
+          <span class="card-date">Jan&nbsp;'25 — Atual</span>
+          <h3 data-i18n="profile.edu1.title">Bacharelado em Ciência da Computação</h3>
+          <p class="institution">UNIMA Afya — Maceió, AL</p>
+        </article>
+
+        <article class="edu-item reveal">
+          <span class="card-date">Mar&nbsp;'21 — Out&nbsp;'25</span>
+          <h3 data-i18n="profile.edu2.title">Técnico em Desenvolvimento de Sistemas</h3>
+          <p class="institution">Instituto Federal de Alagoas (IFAL)</p>
+        </article>
+      </div>
+    </section>
+
+   
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
